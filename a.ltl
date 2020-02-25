@@ -1,0 +1,8 @@
+#define p (router[0].rcvctr != 10)
+never  {    /* []p */
+accept_init:
+T0_init:
+	if
+	:: ((p)) -> goto T0_init
+	fi;
+}
